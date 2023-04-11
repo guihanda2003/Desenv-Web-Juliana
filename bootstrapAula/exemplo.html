@@ -31,18 +31,10 @@
 
 <script>
     function sorteador() {
-        let min = document.getElementById('num1').value;
-        let max = document.getElementById('num2').value;
-        let minInt = parseInt(min);
-        let maxInt = parseInt(max);
-        document.getElementById('numSorteado').innerHTML = Math.floor(Math.random() * (maxInt - minInt)) + minInt;
+        let min = parseInt(document.getElementById('num1').value);
+        let max = parseInt(document.getElementById('num2').value);
+        document.getElementById('numSorteado').innerHTML = Math.floor(Math.random() * (max - min)) + min;
     }
-
-
-
-
-
-
 </script>
 
 
